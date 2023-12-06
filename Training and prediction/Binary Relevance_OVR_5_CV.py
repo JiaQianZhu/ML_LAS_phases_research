@@ -42,7 +42,7 @@ f1_score_values = cross_val_score(multi_label_classifier, X, y, cv=kf, scoring='
 precision_score_values = cross_val_score(multi_label_classifier, X, y, cv=kf, scoring='precision_micro')
 recall_score_values = cross_val_score(multi_label_classifier, X, y, cv=kf, scoring='recall_micro')
 
-# Print the mean and standard deviation for each metric
+
 print("\nMean and Standard Deviation for Each Metric:")
 print(f"Hamming Loss: Mean = {np.mean(hamming_loss_values)}, Std = {np.std(hamming_loss_values)}")
 print(f"Accuracy: Mean = {np.mean(accuracy_values)}, Std = {np.std(accuracy_values)}")
